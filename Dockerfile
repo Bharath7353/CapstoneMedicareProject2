@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk
-COPY ./target/CapstoneMedicareProject-0.0.1-SNAPSHOT.jar capstonemedicareproject2-0.0.1-SNAPSHOT.jar
+COPY ./target/CapstoneMedicareProject-0.0.1-SNAPSHOT.jar CapstoneMedicareProject-0.0.1-SNAPSHOT.jar
 CMD ["java" ,"-jar","capstonemedicareproject-0.0.1-SNAPSHOT.jar"]
 RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
