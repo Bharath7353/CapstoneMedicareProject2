@@ -44,7 +44,7 @@ pipeline {
                 echo '----------------- This is a docker deploment phase ----------'
                 sh '''
                  (if  [ $(docker ps -a | grep capstonemedicareproject2 | cut -d " " -f1) ]; then \
-                        echo $(docker rm -f ecom-webservice); \
+                        echo $(docker rm -f capstonemedicareproject2); \
                         echo "---------------- successfully removed capstonemedicareproject2 ----------------"
                      else \
                     echo OK; \
