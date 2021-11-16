@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo '----------------- This is a build docker image phase ----------'
                 sh '''
-                    docker image build -t CapstoneMedicareProject2 .
+                    docker image build -t capstonemedicareproject2 .
                 '''
             }
         }
@@ -43,13 +43,13 @@ pipeline {
             steps {
                 echo '----------------- This is a docker deploment phase ----------'
                 sh '''
-                 (if  [ $(docker ps -a | grep CapstoneMedicareProject2 | cut -d " " -f1) ]; then \
+                 (if  [ $(docker ps -a | grep capstonemedicareproject2 | cut -d " " -f1) ]; then \
                         echo $(docker rm -f ecom-webservice); \
-                        echo "---------------- successfully removed CapstoneMedicareProject2 ----------------"
+                        echo "---------------- successfully removed capstonemedicareproject2 ----------------"
                      else \
                     echo OK; \
                  fi;);
-            docker container run --restart always --name CapstoneMedicareProject2 -p 8085:8085 -d CapstoneMedicareProject2
+            docker container run --restart always --name capstonemedicareproject2 -p 8085:8085 -d capstonemedicareproject2
             '''
             }
         }

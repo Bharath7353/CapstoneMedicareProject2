@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
-COPY ./target/CapstoneMedicareProject2-0.0.1-SNAPSHOT.jar CapstoneMedicareProject2-0.0.1-SNAPSHOT.jar
-CMD ["java" ,"-jar","CapstoneMedicareProject2-0.0.1-SNAPSHOT.jar"]
+COPY ./target/capstonemedicareproject2-0.0.1-SNAPSHOT.jar capstonemedicareproject2-0.0.1-SNAPSHOT.jar
+CMD ["java" ,"-jar","capstonemedicareproject2-0.0.1-SNAPSHOT.jar"]
 RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 #-> Create a image for springboot webservice
