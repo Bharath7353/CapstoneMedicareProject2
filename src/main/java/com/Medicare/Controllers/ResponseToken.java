@@ -8,14 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ResponseToken {
-		public ResponseToken(String message, String token) {
-		super();
-		this.message = message;
-		Token = token;
-	}
-		public ResponseToken() {
-			super();
-		}
+
 		String message;
 		String Token;
 		public String getMessage() {

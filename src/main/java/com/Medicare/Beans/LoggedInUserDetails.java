@@ -28,14 +28,7 @@ public class LoggedInUserDetails {
 	public String getAuthToken() {
 		return authToken;
 	}
-	public LoggedInUserDetails() {
-		super();
-	}
-	public LoggedInUserDetails(User loggedInUserObject, String authToken) {
-		super();
-		this.loggedInUserObject = loggedInUserObject;
-		this.authToken = authToken;
-	}
+
 	public void setAuthToken(String authToken) {
 		this.authToken = authToken;
 	}
