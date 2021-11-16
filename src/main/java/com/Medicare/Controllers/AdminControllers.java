@@ -52,7 +52,7 @@ public class AdminControllers {
 	@Autowired
 	List<LoggedInUserDetails> loggedInUsersDetailsList;
 	
-	String baseURL="http://54.205.93.126:8085";
+	String baseURL="http://52.73.87.176:8085";
 	//String baseURL="http://54.157.10.242:8084";
 	
 	public String adminAuthentication(HttpServletRequest request) {
